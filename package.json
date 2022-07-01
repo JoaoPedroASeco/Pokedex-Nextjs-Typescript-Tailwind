@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
+    "framer-motion": "^6.3.16",
     "next": "latest",
+    "phosphor-react": "^1.4.1",
     "react": "18.1.0",
     "react-dom": "18.1.0"
   },

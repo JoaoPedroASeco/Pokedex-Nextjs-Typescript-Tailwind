@@ -1,13 +1,52 @@
 import { createContext, ReactNode, useEffect, useState } from "react"
 
 export interface pokemonArrayProps {
+  url: string,
   id: number
   name: string
+  weight: number
+  base_experiences: number
+  height: number
+  stats: {
+    base_stat: number
+    effort: number
+    stat: {
+      name: string
+      url: string
+    }
+  }[]
+  moves: {
+    move: {
+      name: string
+      url: string
+    }
+    version_group_details: {
+      level_learned_at: number
+      move_learn_method: {
+        name: string
+        url: string
+      }
+      version_group: {
+        name: string
+        url: string
+      }
+    }[]
+  }[]
   sprites: {
-    front_default: string
+    other: {
+      'official-artwork': {
+        front_default: string
+      }
+    }
   }
+  types:{
+    slot: number
+    type: {
+      name: string
+      url: string
+    }
+  }[]
 }
-
 export interface HomeContextProps {
   pokemons: pokemonArrayProps[]
   searchedPokemons: pokemonArrayProps[]

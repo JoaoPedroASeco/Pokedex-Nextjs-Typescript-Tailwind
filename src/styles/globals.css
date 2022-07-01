@@ -5,3 +5,41 @@
 body {
   @apply font-popins bg-zinc-600
 }
+
+.rock {
+  @apply bg-rock text-rock
+}
+.ghost {
+  @apply bg-ghost text-ghost
+}
+.psychic {
+  @apply bg-psychic text-psychic
+}
+.electric {
+  @apply bg-electric text-electric
+}
+.bug {
+  @apply bg-bug text-bug
+}
+.poison {
+  @apply bg-poison text-poison
+}
+.normal {
+  @apply bg-normal text-normal
+}
+.steel {
+  @apply bg-steel text-steel
+}
+.flying {
+  @apply bg-flying text-flying
+}
+.fire {
+  @apply bg-fire text-fire
+}
+.grass {
+  @apply bg-grass text-grass
+}
+.water {
+  @apply bg-water text-water
+}
+

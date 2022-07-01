@@ -3,7 +3,7 @@ import { GetServerSideProps } from "next"
 import { HomeTemplate } from "../components/Template/HomeTemplate"
 import { pokemonArrayProps } from "../context/HomeContext"
 
-const Home = ({ pokemon }: { pokemon: pokemonArrayProps[] }) => <HomeTemplate pokemon={pokemon} />
+const Home = ({ pokemon, next }: { pokemon: pokemonArrayProps[], next: string }) => <HomeTemplate pokemon={pokemon} next={next} />
 
 export default Home
 

@@ -3,26 +3,13 @@ import { PokemonList } from "../Organism/Home/PokemonList"
 import { HomeHeader } from "../Organism/Home/Header"
 import { useContext, useEffect } from "react"
 import Head from "next/head"
-import axios from "axios"
 
-export const HomeTemplate = () => {
+export const HomeTemplate = ({ pokemon, next }: { pokemon: pokemonArrayProps[], next: string }) => {
   const { setNextPokemons, setPokemons} = useContext(HomeContext)
 
   useEffect(() => {
-    const fetchPokemons = async () => {
-      const { data } = await axios.get('https://pokeapi.co/api/v2/pokemon?limit=12')
-
-      const pokemonArray = await Promise.all(data.results.map(async ({ url }: pokemonArrayProps) => {
-        const { data } = await axios.get(url)
-    
-        return data
-      }))
-
-      setPokemons(pokemonArray)
-      setNextPokemons(data.next)
-    }
-
-    fetchPokemons()
+    setPokemons(pokemon)
+    setNextPokemons(next)
   }, [])
 
   return (

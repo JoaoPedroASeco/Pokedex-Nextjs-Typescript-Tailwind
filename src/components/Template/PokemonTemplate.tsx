@@ -48,10 +48,10 @@ export const PokemonTemplate = ({ pokemon, pokemonDescription }: PokemonProps) =
         </div>
 
         {/* Pokemon Body */}
-        <strong className="flex flex-row justify-center pt-6 items-center bg-white w-[97%] h-[60%] rounded-t-3xl z-[9]">
+        <strong className="flex flex-row desktop-4:flex-col justify-center pt-6 items-center bg-white w-[97%] h-[60%] rounded-t-3xl z-[9]">
           {/* Pokemon Image */}
           <div className="relative h-full w-[60%] z-0">
-            <div className="absolute w-[45rem] h-[45rem] left-[15%] bottom-[5%] z-[9]">
+            <div className="absolute desktop-1:w-[45rem] desktop-1:h-[45rem] desktop-2:w-[40rem] desktop-2:h-[40rem] desktop-3:w-[36rem] desktop-3:h-[36rem] desktop-4:w-[30rem] desktop-4:h-[30rem] left-[15%] bottom-[5%] z-[9]">
               <Image
                 src={pokemon.sprites.other["official-artwork"].front_default}
                 objectFit="fill"

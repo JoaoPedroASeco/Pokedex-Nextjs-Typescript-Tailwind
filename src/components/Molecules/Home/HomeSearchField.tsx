@@ -8,7 +8,7 @@ export const HomeSearchField = () => {
   return (
     <div className="flex w-full h-full relative justify-center items-center">
       <input
-        className="flex w-full border-2 border-gray-300 rounded-lg h-[3rem] text-center text-[1.25rem]"
+        className="flex w-full border-2 border-gray-300 rounded-lg xl:h-[3rem] lg:h-[2.875rem] md:h-[2.75rem] sm:h-[2.5rem] h-[2.175rem] text-center text-[1.25rem]"
         onChange={(event) => {
           handleSearchPokemons(event.target.value)
           setTextLenght(event.target.value.length)

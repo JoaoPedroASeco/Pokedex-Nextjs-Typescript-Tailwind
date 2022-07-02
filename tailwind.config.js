@@ -55,6 +55,20 @@ module.exports = {
         water: '#6493EB',
       }
     },
+    screens: {
+      'desktop-1': {max: '1920px'},
+      'desktop-2': {max: '1680px'},
+      'desktop-3': {max: '1369px'},
+      'desktop-4': {max: '1094px'},
+      'desktop-5': {max: '768px'},
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1094px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 }

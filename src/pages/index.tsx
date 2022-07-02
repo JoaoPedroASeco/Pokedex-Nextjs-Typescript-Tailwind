@@ -8,7 +8,7 @@ const Home = ({ pokemon, next }: { pokemon: pokemonArrayProps[], next: string })
 export default Home
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const { data } = await axios.get(`https://pokeapi.co/api/v2/pokemon?limit=12`)
+  const { data } = await axios.get(`https://pokeapi.co/api/v2/pokemon?limit=16`)
 
   const pokemonArray = await Promise.all(data.results.map(async ({ url }: pokemonArrayProps) => {
     const { data } = await axios.get(url)

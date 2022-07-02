@@ -1,14 +1,14 @@
 export const HomeLogo = () => {
   return (
     <div className="flex w-full">
-      <div className="max-w-[4rem] mr-[6%] w-full">
+      <div className="xl:max-w-[4rem] lg:max-w-[3.5rem] md:max-w-[3rem] sm:max-w-[3rem] max-w-[2rem] mr-[6%]">
         <svg className="w-full h-full" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M15.3098 12.0806C15.3098 13.6585 14.0306 14.9377 12.4526 14.9377C10.8747 14.9377 9.59549 13.6585 9.59549 12.0806C9.59549 10.5026 10.8747 9.22342 12.4526 9.22342C14.0306 9.22342 15.3098 10.5026 15.3098 12.0806Z" fill="#212121" />
           <path fillRule="evenodd" clipRule="evenodd" d="M12.4526 24.0806C18.498 24.0806 23.4993 19.6102 24.3311 13.7949H17.3029C16.5969 15.7923 14.6919 17.2234 12.4526 17.2234C10.2134 17.2234 8.30842 15.7923 7.60242 13.7949H0.57416C1.40598 19.6102 6.40726 24.0806 12.4526 24.0806ZM7.60242 10.3663H0.57416C1.40598 4.55092 6.40726 0.0805664 12.4526 0.0805664C18.498 0.0805664 23.4993 4.55092 24.3311 10.3663H17.3029C16.5969 8.36881 14.6919 6.93771 12.4526 6.93771C10.2134 6.93771 8.30842 8.36881 7.60242 10.3663ZM15.3098 12.0806C15.3098 13.6585 14.0306 14.9377 12.4526 14.9377C10.8747 14.9377 9.59549 13.6585 9.59549 12.0806C9.59549 10.5026 10.8747 9.22342 12.4526 9.22342C14.0306 9.22342 15.3098 10.5026 15.3098 12.0806Z" fill="#212121" />
         </svg>
       </div>
 
-      <h1 className="flex items-center justify-center text-black font-bold xl:text-[4rem] lg:text-[3.5rem] md:text-[3rem]">
+      <h1 className="flex items-center justify-center text-black font-bold xl:text-[4rem] lg:text-[3.5rem] md:text-[3rem] sm:text-[2.875rem] text-[1.75rem]">
         Pokédex
       </h1>
     </div>
